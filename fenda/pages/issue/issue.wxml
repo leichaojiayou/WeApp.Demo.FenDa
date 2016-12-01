@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view>
+	<view class="ques-wrapper">
+		<view class="ques-info">
+			<image src="/img/avatar/qust-avater.png"></image>
+			<view class="ques-sec">
+				<view class="ques-user">{{questUser}}</view>
+				<view class="ques-cost">{{questCost}}</view>
+			</view>
+		</view>
+		<view class="ques-content">{{questContent}}
+		</view>
+		<view class="ans-wrapper">
+			<image src="/img/avatar/czy.png" mode="aspectFill" catchtap="toPerson" data-master="zr"></image>
+			<view class="ans-voice">点击播放</view>
+			<view class="ans-time">{{ansTime}}</view>
+		</view>
+		<view class="ans-info">
+			<view>{{ansInfo.date}}1天前</view>
+			<view>{{ansInfo.pv}}听过2131</view>
+		</view>
+	</view>
+	<view class="master-info" bindtap="toPerson" data-master="{{dataMasterId}}czy">
+		<image src="/img/avatar/czy.png"></image>
+		<view class="master-brief">
+			<view class="master-user">{{masterUser}}</view>
+			<view class="master-intro">{{masterIntro}}</view>
+			<view class="master-fans">{{masterFans}}</view>
+		</view>
+		<view class="master-follow">收听</view>
+	</view>
+</view>

@@ -1,0 +1,23 @@
+<view class="about">
+	<view class="master-info">
+		<image src="/img/avatar/czy.png"></image>
+		<view class="master-brief">
+			<view class="master-user">{{masterUser}}</view>
+			<view class="master-fans"><text class="bold">{{masterFans}}</text> 收听</view>
+		</view>
+		<view class="master-follow">收听</view>
+	</view>
+	<view class="master-intro">{{masterIntro}}</view>
+	<view class="detail">
+		<view>{{detail[0]}}</view>
+		<view>{{detail[1]}}</view>
+	</view>
+</view>
+<view class="quiz-wrapper">
+	<view class="quiz-info">{{quizInfo}}</view>
+	<view class="quiz-input">
+		<textarea placeholder="向TA提问，等TA语音回答；超过48小时未回答，将按支付路径全额退款，被回答后可免费向TA追问" maxlength="5">向TA提问，等TA语音回答；超过48小时未回答，将按支付路径全额退款，被回答后可免费向TA追问</textarea>
+	</view>
+	<view class="quiz-cost">{{quizCost}}</view>
+	<button class="submit" bindtap="quizSubmit">写好了</button>
+</view>
